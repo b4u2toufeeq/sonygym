@@ -1,0 +1,27 @@
+# robots.txt — Sony Enterprises
+# Replace sonyenterprises.in with the live domain before deploying.
+
+User-agent: *
+Allow: /
+Disallow: /abcde.html
+
+# Block the demo popup from being crawled as a page (it is a modal, not a URL)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://sonyenterprises.in/sitemap.xml

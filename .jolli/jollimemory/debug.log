@@ -1,0 +1,116 @@
+[2026-09-29T03:59:36.455Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:36.530Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-09-29T03:59:36.530Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-09-29T03:59:36.531Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-09-29T03:59:36.534Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-09-29T03:59:36.598Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:36.612Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:37.514Z] INFO  [RepoProfile] manual-disable MIGRATE → manuallyDisabled=false (pid=12388, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, fence=none, from=legacy-marker) ←  at wY (c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist\Extension.js:117:909) | at c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist\Extension.js:118:953 | at async Ef (c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist\Extension.js:3:5846) | at async fY (c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist\Extension.js:118:572) | at async yo (c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist\Extension.js:118:475) | at async t.refreshHookPathsIfStale (c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist\Extension.js:4026:18339)
+[2026-09-29T03:59:37.530Z] INFO  [RepoProfile] manual-disable read → false (by=migrate:legacy-marker, pid=12388, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=undefined fence=none)
+[2026-09-29T03:59:37.537Z] INFO  [bridge] Own dist-paths/vscode missing, stale, or pointing elsewhere — re-enabling
+[2026-09-29T03:59:37.538Z] INFO  [bridge] enable() called
+[2026-09-29T03:59:37.556Z] INFO  [Installer] Installing Jolli Memory hooks
+[2026-09-29T03:59:37.563Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:37.816Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:37.845Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=h:\liveFastClone
+[2026-09-29T03:59:39.590Z] INFO  [Installer] Checking Jolli Memory status
+[2026-09-29T03:59:39.695Z] INFO  [DispatchScripts] Wrote resolve-dist-path, run-hook, and run-cli scripts to C:\Users\Administrator\.jolli\jollimemory
+[2026-09-29T03:59:39.747Z] INFO  [DistPathWriter] Wrote dist-paths/vscode (version=0.99.18, distDir=c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist)
+[2026-09-29T03:59:39.842Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 3) to H:\liveFastClone\.agents\skills\jolli-recall\SKILL.md
+[2026-09-29T03:59:39.849Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 3) to H:\liveFastClone\.agents\skills\jolli-search\SKILL.md
+[2026-09-29T03:59:39.856Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 6) to H:\liveFastClone\.agents\skills\jolli-local-run\SKILL.md
+[2026-09-29T03:59:39.864Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 5) to H:\liveFastClone\.agents\skills\jolli-remote-run\SKILL.md
+[2026-09-29T03:59:39.871Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 9) to H:\liveFastClone\.agents\skills\jolli\SKILL.md
+[2026-09-29T03:59:40.061Z] INFO  [Installer] Checking Jolli Memory status
+[2026-09-29T03:59:40.075Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-09-29T03:59:40.076Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-09-29T03:59:40.076Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-09-29T03:59:40.077Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-09-29T03:59:40.484Z] INFO  [GitExclude] Updated H:\liveFastClone\.git\info\exclude with 8 Jolli skill exclude paths
+[2026-09-29T03:59:40.497Z] INFO  [McpRegistration] Registered MCP server in H:\liveFastClone\.mcp.json
+[2026-09-29T03:59:40.511Z] INFO  [JsonMcpWriter] Registered MCP server in H:\liveFastClone\.cursor\mcp.json
+[2026-09-29T03:59:40.544Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\Administrator\.gemini\settings.json
+[2026-09-29T03:59:40.562Z] INFO  [CodexTomlWriter] Registered Codex MCP server in C:\Users\Administrator\.codex\config.toml
+[2026-09-29T03:59:40.586Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\Administrator\.config\opencode\opencode.json
+[2026-09-29T03:59:40.604Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\Administrator\AppData\Roaming\Code\User\mcp.json
+[2026-09-29T03:59:40.620Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\Administrator\.config\devin\config.json
+[2026-09-29T03:59:40.669Z] INFO  [JsonMcpWriter] Registered MCP server in C:\Users\Administrator\.gemini\config\mcp_config.json
+[2026-09-29T03:59:40.684Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:40.720Z] INFO  [GitHookInstaller] Git post-commit hook installed
+[2026-09-29T03:59:40.730Z] INFO  [GitHookInstaller] Git post-rewrite hook installed
+[2026-09-29T03:59:40.739Z] INFO  [GitHookInstaller] Git prepare-commit-msg hook installed
+[2026-09-29T03:59:40.750Z] INFO  [GitHookInstaller] Git post-merge hook installed
+[2026-09-29T03:59:40.759Z] INFO  [GitHookInstaller] Git pre-push hook installed
+[2026-09-29T03:59:40.769Z] INFO  [GeminiHookInstaller] Gemini AfterAgent hook installed
+[2026-09-29T03:59:40.773Z] INFO  [Installer] Skipping v5 migration on vscode-extension source — Extension.ts owns it with UI
+[2026-09-29T03:59:40.773Z] INFO  [Installer] Installation complete
+[2026-09-29T03:59:40.779Z] INFO  [Installer] Checking Jolli Memory status
+[2026-09-29T03:59:41.140Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:42.268Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:44.929Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:44.950Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=h:\liveFastClone
+[2026-09-29T03:59:46.445Z] ERROR [initialLoad] Failed to load panels {"code":128,"killed":false,"signal":null,"cmd":"git rev-parse HEAD","stdout":"HEAD\n","stderr":"fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n"}
+[2026-09-29T03:59:47.803Z] INFO  [Installer] Status: enabled=false, claude=false, git=false, geminiHook=false, hermesHook=false, worktreeHooks=false, sessions=3, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-09-29T03:59:47.932Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:47.934Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:47.936Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:47.945Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:47.998Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=h:\liveFastClone
+[2026-09-29T03:59:49.174Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=h:\liveFastClone
+[2026-09-29T03:59:50.404Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=3, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-09-29T03:59:50.422Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:50.649Z] INFO  [Installer] Checking Jolli Memory status
+[2026-09-29T03:59:51.390Z] INFO  [SchemaV5Migration] Storage backend not initialized yet — skipping schema v5 migration (no data to migrate)
+[2026-09-29T03:59:51.390Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=true migrated=0 skipped=0
+[2026-09-29T03:59:53.386Z] INFO  [Installer] Status: enabled=false, claude=false, git=false, geminiHook=true, hermesHook=false, worktreeHooks=false, sessions=3, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-09-29T03:59:53.389Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:53.393Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:53.393Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:54.717Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=3, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-09-29T03:59:54.738Z] INFO  [Installer] Checking Jolli Memory status
+[2026-09-29T03:59:55.587Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T03:59:57.568Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=3, summaries=0, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-09-29T03:59:57.573Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=12388, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-09-29T04:00:34.250Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:01:34.263Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:02:34.280Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:03:34.301Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:04:34.312Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:05:34.324Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:06:34.330Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:07:34.337Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:09:01.100Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:10:01.105Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:11:01.118Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:12:01.154Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:13:01.163Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:14:01.179Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:15:01.189Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:16:01.203Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:17:01.209Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:18:01.223Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:19:01.238Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:20:01.249Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:21:01.249Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:22:01.262Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:23:01.270Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:24:01.278Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:25:01.282Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:26:01.294Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:27:01.324Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:28:01.300Z] INFO  [SessionTracker] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:28:12.817Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-09-29T04:28:12.838Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=10168, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-09-29T04:28:13.416Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-09-29T04:28:16.477Z] INFO  [RepoProfile] [trace=ac8129f51f0362720d57225f8eadd07c] manual-disable read → false (by=manuallyDisabled, pid=9912, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-09-29T04:28:16.882Z] INFO  [PostCommitHook] [trace=ac8129f51f0362720d57225f8eadd07c] Detected operation: commit
+[2026-09-29T04:28:17.746Z] INFO  [PostCommitHook] [trace=ac8129f51f0362720d57225f8eadd07c] Enqueued: type=commit hash=ced61eea
+[2026-09-29T04:28:17.747Z] INFO  [QueueWorker] [trace=ac8129f51f0362720d57225f8eadd07c] Launching background worker
+[2026-09-29T04:28:17.910Z] INFO  [QueueWorker] [trace=ac8129f51f0362720d57225f8eadd07c] Background worker spawned (PID: 9308)
+[2026-09-29T04:28:18.015Z] INFO  [EnsureGlobalDaemon] [trace=ac8129f51f0362720d57225f8eadd07c] spawned global daemon ensure helper (pid 1404)
+[2026-09-29T04:28:18.023Z] INFO  [SessionTracker] [trace=ac8129f51f0362720d57225f8eadd07c] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:28:19.665Z] INFO  [SessionTracker] [trace=ac8129f51f0362720d57225f8eadd07c] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:28:19.679Z] INFO  [SessionTracker] [trace=ac8129f51f0362720d57225f8eadd07c] Ignoring stored credential for a retired Jolli host — sign in again
+[2026-09-29T04:28:19.710Z] INFO  [RepoProfile] [trace=ac8129f51f0362720d57225f8eadd07c] manual-disable read → false (by=manuallyDisabled, pid=9308, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-09-29T04:28:22.060Z] INFO  [QueueWorker] [trace=ac8129f51f0362720d57225f8eadd07c] === Queue worker started === node=24.15.0 kind=vscode-plugin source=vscode pkgVer=0.99.18 cliVer=0.99.18 dist=c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist
+[2026-09-29T04:28:22.063Z] INFO  [SessionTracker] [trace=ac8129f51f0362720d57225f8eadd07c] Ignoring stored credential for a retired Jolli host — sign in again
