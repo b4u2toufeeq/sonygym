@@ -1,3 +1,11 @@
 {
-	"manuallyDisabled": false
+	"manuallyDisabled": false,
+	"cutoverAttemptedAtMs": 1790656176066,
+	"cutoverFence": {
+		"reason": "cutover to sqlite",
+		"at": "2026-09-29T04:29:38.370Z",
+		"tips": {
+			"H:\\liveFastClone": "a554bd8041271b7be41bd5bc00a423646b944685"
+		}
+	}
 }

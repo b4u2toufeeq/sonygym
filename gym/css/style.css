@@ -13,6 +13,19 @@
   --gym-gold: rgb(227, 178, 63);
   --gym-gold-light: #f5d98a;
   --gym-black: #16110a;
+  /* Elevation: layered, warm-tinted shadows so depth reads as part of the
+     gold-on-black identity instead of flat neutral gray. */
+  --gym-shadow-xs: 0 1px 2px rgba(22, 17, 10, 0.06);
+  --gym-shadow-sm: 0 1px 2px rgba(22, 17, 10, 0.04), 0 2px 6px rgba(22, 17, 10, 0.05);
+  --gym-shadow-md: 0 2px 4px rgba(22, 17, 10, 0.04), 0 6px 16px rgba(22, 17, 10, 0.08);
+  --gym-shadow-lg: 0 4px 8px rgba(22, 17, 10, 0.05), 0 14px 32px rgba(22, 17, 10, 0.12);
+  --gym-shadow-xl: 0 8px 16px rgba(22, 17, 10, 0.06), 0 26px 54px rgba(22, 17, 10, 0.16);
+  --gym-shadow-gold: 0 10px 26px rgba(227, 178, 63, 0.3);
+  --gym-hairline: rgba(22, 17, 10, 0.07);
+  --gym-hairline-strong: rgba(22, 17, 10, 0.12);
+  --gym-radius: 6px;
+  --gym-radius-lg: 10px;
+  --gym-lift: 0.35s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 
 /* Brand logo lockup - circular gold seal, transparent background */
@@ -354,6 +367,18 @@ a:hover, a:focus {
 }
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
   color: var(--gym-gold);
+}
+.navbar-nav .nav-link.active {
+  color: var(--gym-gold);
+  box-shadow: inset 0 -2px 0 0 var(--gym-gold);
+}
+.navbar-nav .nav-link.dropdown-toggle.active {
+  box-shadow: none;
+}
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .top-header {
@@ -853,4 +878,541 @@ ul.dropdown-menu li {
     padding: 0px;
   }
 }
+/*=== SONY GYM: layout repairs, page furniture and new sections ===*/
+
+/* The dark photo overlays (.slider/.cta/.textimonial/.page-title) are painted
+   above static content unless the inner container is positioned, so lift it. */
+.navigation {
+  background: transparent;
+  padding: 8px 0;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.navigation.fixed-nav {
+  background: var(--gym-black);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+.slider > .container,
+.cta > .container,
+.textimonial > .container,
+.page-title > .container,
+.overly > .container,
+.overly-2 > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+[id] {
+  scroll-margin-top: 90px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  a {
+    transition: none !important;
+  }
+}
+
+/* Breadcrumb - dark strip directly under the fixed header */
+.gym-breadcrumb {
+  background: var(--gym-black);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 78px 0 14px;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+.gym-breadcrumb .list-inline-item + .list-inline-item::before {
+  content: "/";
+  color: rgba(255, 255, 255, 0.35);
+  padding: 0 8px;
+}
+.gym-breadcrumb a {
+  color: rgba(255, 255, 255, 0.85);
+}
+.gym-breadcrumb .active {
+  color: var(--gym-gold);
+}
+.gym-breadcrumb + .slider {
+  padding-top: 90px;
+}
+
+/* Answer-first block (AEO) */
+.gym-answer {
+  background: #f0f2f4;
+  padding: 70px 0;
+  border-left: 4px solid var(--gym-gold);
+  box-shadow: inset 6px 0 0 -2px rgba(0, 0, 0, 0.04);
+}
+.gym-answer h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.gym-answer .text-uppercase {
+  color: #232323;
+  letter-spacing: 1px;
+}
+.gym-answer a {
+  font-weight: 600;
+}
+
+/* FAQ accordion */
+.gym-faq .card {
+  border: 0;
+  border-bottom: 1px solid #e3e6e8;
+  border-radius: 0;
+  background: transparent;
+}
+.gym-faq .card:first-child {
+  border-top: 1px solid #e3e6e8;
+}
+.gym-faq .card-header {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.gym-faq .btn-link {
+  color: #232323;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  padding: 22px 44px 22px 0;
+  position: relative;
+  text-decoration: none;
+}
+.gym-faq .btn-link:hover,
+.gym-faq .btn-link:focus {
+  color: var(--gym-gold);
+}
+.gym-faq .btn-link::after {
+  content: "+";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--gym-gold);
+}
+.gym-faq .btn-link.collapsed::after {
+  content: "\2212";
+}
+.gym-faq .card-body {
+  color: #555;
+  padding: 0 44px 24px 0;
+  font-size: 15px;
+}
+
+/* Gallery - the theme shipped without any .gallery rules */
+.gallery {
+  padding-bottom: 0;
+}
+.gallery .portfolio-gallery {
+  margin-top: 0;
+}
+.gallery .popup-gallery {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: var(--gym-gold);
+}
+.gallery .popup-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, opacity 0.35s ease;
+  opacity: 0.92;
+}
+.gallery .popup-gallery::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(22, 17, 10, 0.45);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.gallery .popup-gallery:hover img,
+.gallery .popup-gallery:focus img {
+  transform: scale(1.06);
+  opacity: 1;
+}
+.gallery .popup-gallery:hover::after,
+.gallery .popup-gallery:focus::after {
+  opacity: 1;
+}
+
+/* Programme cards */
+/* Card elevation and hover lift come from the shared card system further
+   down this file, so no shadow rules are repeated here. */
+.course .card-body h3 a {
+  color: #232323;
+}
+.course .card-body h3 a:hover {
+  color: var(--gym-gold);
+}
+.course .card-body p {
+  color: #666;
+}
+
+/* Numbered intro cards */
+.section .card .number {
+  color: var(--gym-gold);
+}
+
+/* Header phone - a paragraph, not a heading, so the outline starts at h1 */
+.navbar-phone {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* Club numbers */
+.gym-stat {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+/* Footer address legibility */
+.footer address {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 991.98px) {
+  .gym-breadcrumb {
+    padding-top: 66px;
+  }
+  .gym-breadcrumb + .slider {
+    padding-top: 70px;
+  }
+  .gym-answer {
+    padding: 50px 0;
+  }
+  .gym-answer h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 480px) {
+  .gym-breadcrumb {
+    font-size: 12px;
+  }
+  .gym-faq .btn-link {
+    padding: 18px 34px 18px 0;
+    font-size: 17px;
+  }
+  .gym-faq .card-body {
+    padding-right: 20px;
+  }
+}
+
+/* Contact page: key-free map, form feedback, opening hours */
+.map-embed {
+  background: var(--gym-black);
+  min-height: 300px;
+}
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+@media (max-width: 767px) {
+  .map-embed iframe {
+    height: 320px;
+  }
+}
+#contact-form label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+#contact-form .form-control {
+  border-radius: var(--gym-radius);
+  border-color: var(--gym-hairline-strong);
+  box-shadow: var(--gym-shadow-xs);
+}
+#contact-form .form-control:focus {
+  border-color: var(--gym-gold);
+  box-shadow: 0 0 0 3px rgba(227, 178, 63, 0.22);
+}
+#contact-form .error,
+#contact-form .success {
+  display: none;
+  margin-top: 18px;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+#contact-form .error {
+  background: #fdecea;
+  border-left-color: #c0392b;
+  color: #7b241c;
+}
+#contact-form .success {
+  background: #eafaf1;
+  border-left-color: #1e8449;
+  color: #145a32;
+}
+.contact-hours th {
+  font-weight: 600;
+  color: #16110a;
+  border-top: 0;
+  padding-left: 0;
+  width: 45%;
+}
+.contact-hours td {
+  text-align: right;
+  color: #555;
+}
+@media (max-width: 480px) {
+  .contact-hours th,
+  .contact-hours td {
+    font-size: 14px;
+  }
+}
+
+/* ============================================================
+   CARD + SHADOW SYSTEM
+   Applies to every page. The utility soup (rounded-0 shadow-sm)
+   is neutralised with !important so one system wins sitewide.
+   ============================================================ */
+
+/* Base: hairline border, soft warm elevation, clipped corners */
+.card {
+  border-radius: var(--gym-radius) !important;
+  border: 1px solid var(--gym-hairline) !important;
+  background-color: #fff;
+  box-shadow: var(--gym-shadow-sm) !important;
+  transition: transform var(--gym-lift), box-shadow var(--gym-lift),
+    border-color var(--gym-lift);
+  position: relative;
+}
+
+/* Image-led cards: clip the image to the rounded corners and
+   give it a hairline seam instead of a hard edge. */
+.card > img.img-fluid:first-child {
+  border-top-left-radius: calc(var(--gym-radius) - 1px);
+  border-top-right-radius: calc(var(--gym-radius) - 1px);
+  box-shadow: inset 0 -1px 0 var(--gym-hairline);
+}
+.card.overflow-hidden > img:first-child,
+.card > .row.no-gutters > [class*="col"] > img:first-child {
+  border-radius: 0;
+}
+.card img.img-fluid {
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+/* Interactive cards lift on hover, but only where there is a real pointer.
+   Touch devices get the resting elevation so nothing sticks "pressed". */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(227, 178, 63, 0.45) !important;
+    box-shadow: var(--gym-shadow-lg) !important;
+  }
+  .card:hover > img.img-fluid:first-child,
+  .card:hover img.img-fluid {
+    transform: scale(1.04);
+  }
+}
+
+/* Keyboard focus: a card reached by Tab gets a visible gold ring */
+.card:focus-within {
+  border-color: var(--gym-gold) !important;
+  box-shadow: var(--gym-shadow-md), 0 0 0 3px rgba(227, 178, 63, 0.35) !important;
+}
+
+/* Card titles and links */
+.card .card-title,
+.card h3,
+.card h4 {
+  transition: color var(--gym-lift);
+}
+.card h3 a,
+.card h4 a {
+  color: #16110a;
+}
+.card h3 a:hover,
+.card h4 a:hover,
+.card h3 a:focus,
+.card h4 a:focus {
+  color: var(--gym-gold);
+  text-decoration: none;
+}
+.card a:focus-visible,
+.card button:focus-visible {
+  outline: 2px solid var(--gym-gold);
+  outline-offset: 3px;
+}
+
+/* --- FAQ accordion: joined stack, gold accent on the open item --- */
+.gym-faq .card {
+  border-radius: var(--gym-radius) !important;
+  border: 1px solid var(--gym-hairline) !important;
+  box-shadow: var(--gym-shadow-xs) !important;
+  overflow: hidden;
+  transform: none !important;
+  transition: border-color var(--gym-lift), box-shadow var(--gym-lift);
+}
+.gym-faq .card + .card {
+  margin-top: 10px;
+}
+.gym-faq .card .card-header {
+  border: 0;
+  background: #fff;
+  border-radius: 0;
+  padding: 0;
+}
+.gym-faq .card .card-header + .card-body {
+  border-top: 1px solid var(--gym-hairline);
+}
+.gym-faq .card.show {
+  border-color: rgba(227, 178, 63, 0.5) !important;
+  box-shadow: var(--gym-shadow-md) !important;
+}
+.gym-faq .card.show > .card-header {
+  box-shadow: inset 3px 0 0 0 var(--gym-gold);
+}
+.gym-faq .card.show > .card-header .btn-link {
+  color: #16110a;
+}
+.gym-faq .card .btn-link {
+  color: #16110a;
+  text-decoration: none;
+}
+.gym-faq .card .btn-link:hover,
+.gym-faq .card .btn-link:focus {
+  color: var(--gym-gold);
+  text-decoration: none;
+}
+
+/* --- Pricing plan cards --- */
+.pricing-plan .card,
+.card.rounded-0.px-4.py-5.h-100 {
+  border-radius: var(--gym-radius-lg) !important;
+  border: 1px solid var(--gym-hairline) !important;
+  box-shadow: var(--gym-shadow-sm) !important;
+}
+/* Plan cards do not lift: they are compared side by side, so a hover that
+   changed the elevation would blur the difference between the three plans. */
+.card.rounded-0.px-4.py-5.h-100:hover {
+  transform: none;
+  border-color: var(--gym-hairline-strong) !important;
+  box-shadow: var(--gym-shadow-md) !important;
+}
+.card.rounded-0.px-4.py-5.h-100.border-warning:hover {
+  transform: translateY(-4px);
+  border-color: var(--gym-gold) !important;
+  box-shadow: var(--gym-shadow-lg), var(--gym-shadow-gold) !important;
+}
+/* the "Most chosen" plan, already flagged with border-warning in the markup.
+   Selector matches the specificity of the plan-card rule above it, because
+   two !important declarations are decided by specificity, not by order. */
+.card.rounded-0.px-4.py-5.h-100.border-warning {
+  border: 1px solid var(--gym-gold) !important;
+  box-shadow: var(--gym-shadow-lg) !important;
+  position: relative;
+}
+.card.border-warning::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--gym-radius-lg);
+  pointer-events: none;
+  box-shadow: var(--gym-shadow-gold);
+  opacity: 0.55;
+}
+.card.border-warning .card-title {
+  color: var(--gym-gold);
+}
+
+/* --- Numbered intro cards on the home page --- */
+.hover-style-1 {
+  border-radius: var(--gym-radius-lg) !important;
+  box-shadow: var(--gym-shadow-sm) !important;
+}
+.hover-style-1:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--gym-shadow-lg) !important;
+}
+.hover-style-1 .number {
+  transition: color var(--gym-lift);
+}
+.hover-style-1:hover .number {
+  color: var(--gym-gold);
+}
+
+/* --- Stat tiles --- */
+.stat.stat-main {
+  background: #fff;
+  border: 1px solid var(--gym-hairline);
+  border-radius: var(--gym-radius);
+  box-shadow: var(--gym-shadow-sm);
+  padding: 26px 18px;
+  height: 100%;
+  transition: transform var(--gym-lift), box-shadow var(--gym-lift),
+    border-color var(--gym-lift);
+}
+.stat.stat-main:hover {
+  transform: translateY(-4px);
+  border-color: rgba(227, 178, 63, 0.45);
+  box-shadow: var(--gym-shadow-md);
+}
+.stat.stat-main .stat-text {
+  color: #16110a;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* --- Sidebar widgets (blog topic index) --- */
+.card.shadow-sm.mb-4 {
+  border-radius: var(--gym-radius) !important;
+  box-shadow: var(--gym-shadow-sm) !important;
+}
+
+/* --- Featured blog card gets the top elevation --- */
+.card.shadow-sm.overflow-hidden {
+  box-shadow: var(--gym-shadow-xl) !important;
+  border-radius: var(--gym-radius-lg) !important;
+}
+.card.shadow-sm.overflow-hidden:hover {
+  box-shadow: var(--gym-shadow-xl), 0 0 0 1px rgba(227, 178, 63, 0.35) !important;
+}
+
+/* Respect reduced-motion: keep the colour change, drop the movement */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card img.img-fluid,
+  .stat.stat-main,
+  .hover-style-1 {
+    transition: none !important;
+  }
+  .card:hover,
+  .hover-style-1:hover,
+  .stat.stat-main:hover,
+  .card:hover img.img-fluid,
+  .card:hover > img.img-fluid:first-child {
+    transform: none !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

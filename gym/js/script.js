@@ -11,12 +11,21 @@
 	// Brand: current year in the footer credit line
 	$('.js-year').text(new Date().getFullYear());
 
-	$(window).scroll(function () {
-		if ($('.navigation').offset().top > 100) {
-			$('.navigation').addClass('fixed-nav');
-		} else {
-			$('.navigation').removeClass('fixed-nav');
-		}
+	// Solid header once the page is scrolled. The previous version read
+	// $('.navigation').offset().top, which is always 0 for a fixed element,
+	// so the header never turned opaque.
+	var $nav = $('.navigation');
+
+	function updateHeader() {
+		$nav.toggleClass('fixed-nav', $(window).scrollTop() > 100);
+	}
+
+	$(window).on('scroll resize', updateHeader);
+	updateHeader();
+
+	// Collapse the mobile menu after a link is chosen
+	$('.navbar-nav a[href]').on('click', function () {
+		$('#navbarsid').collapse('hide');
 	});
 
 
@@ -32,32 +41,39 @@
 
 	$('#contact-form').validate({
 		rules: {
-			user_name: {
+			name: {
 				required: true,
-				minlength: 4
+				minlength: 2
 			},
-			user_email: {
+			email: {
 				required: true,
 				email: true
 			},
-			// user_subject: {
-			// 	required: false
-			// },
-			user_message: {
-				required: true
+			subject: {
+				required: true,
+				minlength: 3
+			},
+			message: {
+				required: true,
+				minlength: 10
 			}
 		},
 		messages: {
-			user_name: {
-				required: 'Come on, you have a name don\'t you?',
-				minlength: 'Your name must consist of at least 2 characters'
+			name: {
+				required: 'Please tell us your name',
+				minlength: 'Your name must be at least 2 characters'
 			},
-			user_email: {
-				required: 'Please put your email address'
+			email: {
+				required: 'Please put your email address',
+				email: 'That email address does not look right'
 			},
-			user_message: {
-				required: 'Put some messages here?',
-				minlength: 'Your name must consist of at least 2 characters'
+			subject: {
+				required: 'Please add a subject so we can route this to the right coach',
+				minlength: 'Please add a slightly longer subject'
+			},
+			message: {
+				required: 'Please write your message',
+				minlength: 'Please give us a little more detail than that'
 			}
 
 		},
@@ -68,10 +84,13 @@
 				url: 'sendmail.php',
 				success: function () {
 					$('#contact-form #success').fadeIn();
+					$('#contact-form #error').hide();
+					$(form).trigger('reset');
 				},
 				error: function () {
 
 					$('#contact-form #error').fadeIn();
+					$('#contact-form #success').hide();
 				}
 			});
 		}
