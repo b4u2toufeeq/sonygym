@@ -26,6 +26,16 @@
     waFloat.setAttribute('href', waLink('Hi, I want to know more about inverter batteries, solar and automotive solutions.'));
   }
 
+  /* --------------------------------------- Promo banner carousel */
+  var promoCarousel = document.getElementById('promoCarousel');
+  if (promoCarousel && window.bootstrap && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // Bootstrap auto-cycles the banner on load; keep it manual for reduced-motion users.
+    window.addEventListener('load', function () {
+      var promo = window.bootstrap.Carousel.getInstance(promoCarousel);
+      if (promo) promo.pause();
+    });
+  }
+
   /* --------------------------------------------------------- Sub nav */
   var subNav = document.getElementById('subNavMenu');
   if (subNav && window.bootstrap) {

@@ -129,6 +129,37 @@ a { color: var(--brand); }
   .sub-nav-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
+/* Promo banner carousel --------------------------------------------------- */
+.promo-carousel { background: linear-gradient(90deg, var(--brand), var(--brand-2)); }
+.promo-carousel .carousel-inner { overflow: hidden; }
+/* Capped width keeps the banner edge-to-edge in feel without upscaling the artwork. */
+.promo-carousel-frame { max-width: 1280px; margin: 0 auto; padding: 1.1rem 0; }
+.promo-carousel .carousel-item img {
+  display: block; width: 100%; height: auto; border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .18);
+  transition: transform .6s ease;
+}
+.promo-carousel .carousel-item.active img { transform: scale(1.03); }
+
+.promo-carousel .carousel-indicators { margin: 0 0 .55rem; }
+.promo-carousel .carousel-indicators [data-bs-target] {
+  width: 32px; height: 5px; border-radius: 999px; margin: 0 .2rem;
+  background-color: #fff; opacity: .45; border: 0;
+  transition: width .3s ease, opacity .3s ease;
+}
+.promo-carousel .carousel-indicators .active { width: 48px; opacity: 1; }
+
+.promo-carousel .carousel-control-prev,
+.promo-carousel .carousel-control-next { width: 7%; opacity: 1; }
+.promo-carousel .carousel-control-prev-icon,
+.promo-carousel .carousel-control-next-icon {
+  width: 46px; height: 46px; background-color: rgba(0, 0, 0, .32);
+  background-size: 40% 40%; border-radius: 50%;
+  transition: background-color .2s ease;
+}
+.promo-carousel .carousel-control-prev:hover .carousel-control-prev-icon,
+.promo-carousel .carousel-control-next:hover .carousel-control-next-icon { background-color: rgba(0, 0, 0, .5); }
+
 /* Hero ------------------------------------------------------------------- */
 .hero-section { background: linear-gradient(180deg, #fff5ef 0%, #ffffff 60%); padding: 4rem 0; }
 .hero-section h1 { font-size: 3rem; line-height: 1.1; }
@@ -399,6 +430,10 @@ a { color: var(--brand); }
   .lead-copy { text-align: center; margin-bottom: 1.5rem; }
   .wa-float { right: 14px; bottom: 14px; width: 52px; height: 52px; font-size: 1.7rem; }
   .wa-float::after { display: none; }
+  .promo-carousel-frame { padding: .75rem 0; }
+  .promo-carousel .carousel-control-prev,
+  .promo-carousel .carousel-control-next { display: none; }
+  .promo-carousel .carousel-indicators { margin-bottom: .35rem; }
   .order-wrap { max-height: 90px; opacity: 1; }
   .product-card .order-wrap { opacity: 1; pointer-events: auto; }
   .dealer-box iframe { height: 300px; }
@@ -412,6 +447,6 @@ a { color: var(--brand); }
 }
 
 @media print {
-  .topbar, .site-header, .wa-float, .modal, .sub-navbar, .breadcrumb-nav { display: none !important; }
+  .topbar, .site-header, .wa-float, .modal, .sub-navbar, .breadcrumb-nav, .promo-carousel { display: none !important; }
   body { color: #000; }
 }
