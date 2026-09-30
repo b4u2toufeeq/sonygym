@@ -1,5 +1,5 @@
 # robots.txt — Sony Enterprises
-# Replace sonyenterprises.in with the live domain before deploying.
+# Replace sonycare.in with the live domain before deploying.
 
 User-agent: *
 Allow: /
@@ -24,4 +24,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://sonyenterprises.in/sitemap.xml
+Sitemap: https://sonycare.in/sitemap.xml

@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace sonyenterprises.in with the live domain before deploying. -->
+<!-- Replace sonycare.in with the live domain before deploying. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sonyenterprises.in/</loc>
+    <loc>https://sonycare.in/</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/</loc>
+    <loc>https://sonycare.in/gym/</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/service.html</loc>
+    <loc>https://sonycare.in/gym/service.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/pricing.html</loc>
+    <loc>https://sonycare.in/gym/pricing.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/contact.html</loc>
+    <loc>https://sonycare.in/gym/contact.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/course.html</loc>
+    <loc>https://sonycare.in/gym/course.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/course-single.html</loc>
+    <loc>https://sonycare.in/gym/course-single.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/about.html</loc>
+    <loc>https://sonycare.in/gym/about.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/trainer.html</loc>
+    <loc>https://sonycare.in/gym/trainer.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/blog.html</loc>
+    <loc>https://sonycare.in/gym/blog.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/blog-sidebar.html</loc>
+    <loc>https://sonycare.in/gym/blog-sidebar.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://sonyenterprises.in/gym/blog-single.html</loc>
+    <loc>https://sonycare.in/gym/blog-single.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

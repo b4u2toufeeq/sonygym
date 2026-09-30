@@ -1,0 +1,102 @@
+[
+  {
+    "file": "carousel3.png",
+    "original_width": 2048,
+    "original_height": 762,
+    "original_kb": 2606.8,
+    "alpha": true,
+    "generated_files": 8,
+    "optimized_same_size_webp_kb": 295.5,
+    "optimized_same_size_avif_kb": 236.2
+  },
+  {
+    "file": "carousel2.png",
+    "original_width": 2048,
+    "original_height": 761,
+    "original_kb": 2490.3,
+    "alpha": true,
+    "generated_files": 8,
+    "optimized_same_size_webp_kb": 241.1,
+    "optimized_same_size_avif_kb": 194.1
+  },
+  {
+    "file": "logo-master(1).png",
+    "original_width": 1606,
+    "original_height": 734,
+    "original_kb": 882.6,
+    "alpha": true,
+    "generated_files": 6,
+    "optimized_same_size_webp_kb": 196.0,
+    "optimized_same_size_avif_kb": 128.2
+  },
+  {
+    "file": "carousel1(1).png",
+    "original_width": 1342,
+    "original_height": 498,
+    "original_kb": 341.2,
+    "alpha": false,
+    "generated_files": 6,
+    "optimized_same_size_webp_kb": 40.5,
+    "optimized_same_size_avif_kb": 49.5
+  },
+  {
+    "file": "hero-inverter-battery.jpg",
+    "original_width": 1000,
+    "original_height": 743,
+    "original_kb": 95.3,
+    "alpha": false,
+    "generated_files": 4,
+    "optimized_same_size_webp_kb": 84.8,
+    "optimized_same_size_avif_kb": 89.0
+  },
+  {
+    "file": "sony-enterprises-logo(1).png",
+    "original_width": 480,
+    "original_height": 219,
+    "original_kb": 91.4,
+    "alpha": true,
+    "generated_files": 2,
+    "optimized_same_size_webp_kb": 32.7,
+    "optimized_same_size_avif_kb": 25.0
+  },
+  {
+    "file": "og-cover.jpg",
+    "original_width": 1200,
+    "original_height": 630,
+    "original_kb": 65.3,
+    "alpha": false,
+    "generated_files": 4,
+    "optimized_same_size_webp_kb": 37.8,
+    "optimized_same_size_avif_kb": 37.7
+  },
+  {
+    "file": "product-tractor-batteries.png",
+    "original_width": 300,
+    "original_height": 224,
+    "original_kb": 51.7,
+    "alpha": true,
+    "generated_files": 2,
+    "optimized_same_size_webp_kb": 15.3,
+    "optimized_same_size_avif_kb": 11.9
+  },
+  {
+    "file": "guide-rooftop-solar.webp",
+    "original_width": 920,
+    "original_height": 1280,
+    "original_kb": 39.8,
+    "alpha": true,
+    "generated_files": 4,
+    "optimized_same_size_webp_kb": 57.4,
+    "optimized_same_size_avif_kb": 63.8
+  },
+  {
+    "file": "product-lithium-alpha-dt-640.jpg",
+    "original_width": 900,
+    "original_height": 679,
+    "original_kb": 37.7,
+    "alpha": false,
+    "generated_files": 4,
+    "optimized_same_size_webp_kb": 24.8,
+    "optimized_same_size_avif_kb": 25.9
+  }
+]

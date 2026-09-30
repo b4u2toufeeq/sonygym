@@ -5,8 +5,8 @@
   'use strict';
 
   var SUPPORT_EMAIL = 'marketing@sonyenterprises.in';
-  var WA_NUMBER = '9193909890002';
-  var PHONE = '+9193909890002';
+  var WA_NUMBER = '919390989002';
+  var PHONE = '+919390989002';
 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
