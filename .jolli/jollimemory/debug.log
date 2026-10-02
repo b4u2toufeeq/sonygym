@@ -713,3 +713,205 @@
 [2026-09-30T18:12:40.602Z] INFO  [McpServer] [trace=b9dc880b664d4d3aca4774507fe3bdad] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
 [2026-09-30T18:12:40.597Z] INFO  [McpProxy] [trace=3ad38559aaa2ca5461708fc1233a3fc6] Attached to MCP daemon 7484 (v0.99.18) for H:/liveFastClone
 [2026-09-30T18:12:40.833Z] INFO  [McpServer] MCP client connected: opencode/1.18.33 (unmapped — candidate for CLIENTINFO_AGENTS)
+[2026-09-30T18:30:12.231Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-09-30T18:30:12.267Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=6060, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-09-30T18:30:12.801Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-09-30T18:30:15.588Z] INFO  [RepoProfile] [trace=c549ffcd669bc67d9388895c09b97140] manual-disable read → false (by=manuallyDisabled, pid=14344, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-09-30T18:30:15.791Z] INFO  [PostCommitHook] [trace=c549ffcd669bc67d9388895c09b97140] Detected operation: commit
+[2026-09-30T18:30:16.180Z] INFO  [PostCommitHook] [trace=c549ffcd669bc67d9388895c09b97140] Enqueued: type=commit hash=91c9590c
+[2026-09-30T18:30:16.181Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Launching background worker
+[2026-09-30T18:30:16.281Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Background worker spawned (PID: 14708)
+[2026-09-30T18:30:16.303Z] INFO  [EnsureGlobalDaemon] [trace=c549ffcd669bc67d9388895c09b97140] spawned global daemon ensure helper (pid 876)
+[2026-09-30T18:30:17.454Z] INFO  [RepoProfile] [trace=c549ffcd669bc67d9388895c09b97140] manual-disable read → false (by=manuallyDisabled, pid=14708, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-09-30T18:30:19.136Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] === Queue worker started === node=24.15.0 kind=vscode-plugin source=vscode pkgVer=0.99.18 cliVer=0.99.18 dist=c:\Users\Administrator\.vscode\extensions\jolli.jollimemory-vscode-0.99.18\dist
+[2026-09-30T18:30:19.177Z] INFO  [StorageFactory] [trace=c549ffcd669bc67d9388895c09b97140] StorageFactory.create: route=cutover, projectPath=H:\liveFastClone
+[2026-09-30T18:30:24.157Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Processing queue entry: type=commit hash=91c9590c
+[2026-09-30T18:30:24.632Z] INFO  [GitOps] [trace=c549ffcd669bc67d9388895c09b97140] Commit 91c9590c: optmized sonycare
+[2026-09-30T18:30:24.633Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Commit: 91c9590c - optmized sonycare (456ms)
+[2026-09-30T18:30:24.731Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Discovered 8 OpenCode session(s)
+[2026-09-30T18:30:25.056Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Discovered 1 Copilot Chat session(s)
+[2026-09-30T18:30:25.256Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f170: 0 new messages, 0 entries extracted (index 59→59)
+[2026-09-30T18:30:26.091Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f14f: 0 new messages, 0 entries extracted (index 388→388)
+[2026-09-30T18:30:28.149Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f121: 0 new messages, 0 entries extracted (index 31→31)
+[2026-09-30T18:30:28.345Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f0ed: 9 new messages, 1 entries extracted (index 3→12)
+[2026-09-30T18:30:28.350Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Transcript source: session=ses_f0ed1ae25ffec31XR1xfVfSfMK, lines=3→12, entries=1
+[2026-09-30T18:30:28.657Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f0db: 7 new messages, 2 entries extracted (index 0→7)
+[2026-09-30T18:30:28.660Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Transcript source: session=ses_f0db2ef5effeyqZK3oxWhegIoI, lines=0→7, entries=2
+[2026-09-30T18:30:29.209Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f0da: 26 new messages, 4 entries extracted (index 0→26)
+[2026-09-30T18:30:29.226Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Transcript source: session=ses_f0dab1759ffeq62y4egwpWL2Mi, lines=0→26, entries=4
+[2026-09-30T18:30:29.620Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f0c9: 44 new messages, 4 entries extracted (index 0→44)
+[2026-09-30T18:30:29.628Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Transcript source: session=ses_f0c93a927ffekD0jUdvgCPv83v, lines=0→44, entries=4
+[2026-09-30T18:30:30.668Z] INFO  [OpenCodeTranscriptReader] [trace=c549ffcd669bc67d9388895c09b97140] Read OpenCode session ses_f0c7: 17 new messages, 2 entries extracted (index 0→17)
+[2026-09-30T18:30:30.675Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Transcript source: session=ses_f0c78dd67ffeNvxycdSvJkWBxg, lines=0→17, entries=2
+[2026-09-30T18:30:30.789Z] WARN  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Transcript source read to zero conversation entries: source=copilot-chat path=C:\Users\Administrator\AppData\Roaming\Code\User\workspaceStorage\82c2dcd469c6056424aab64f9dfec9f1\chatSessions\e2dec926-8fb4-4fe0-ac62-b5732f896109.jsonl lines=0→0 unrecognizedRows=0
+[2026-09-30T18:30:30.789Z] WARN  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Not advancing read cursor: source recognized nothing in consumed lines: source=copilot-chat path=C:\Users\Administrator\AppData\Roaming\Code\User\workspaceStorage\82c2dcd469c6056424aab64f9dfec9f1\chatSessions\e2dec926-8fb4-4fe0-ac62-b5732f896109.jsonl lines=0→0 unrecognizedRows=0
+[2026-09-30T18:30:38.089Z] WARN  [GitOps] [trace=c549ffcd669bc67d9388895c09b97140] Diff exceeds 150000-char budget (555130 chars) — prepending --stat file list and truncating body
+[2026-09-30T18:30:39.536Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Git diff: 121 files changed, +1248 -401 (8.7s)
+[2026-09-30T18:30:42.670Z] WARN  [GitOps] [trace=c549ffcd669bc67d9388895c09b97140] Diff exceeds 60000-char budget (555130 chars) — prepending --stat file list and truncating body
+[2026-09-30T18:30:42.699Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-09-30T18:30:42.705Z] INFO  [Summarizer] [trace=c549ffcd669bc67d9388895c09b97140] Generating summary for commit 91c9590c
+[2026-09-30T18:30:42.705Z] INFO  [Summarizer] [trace=c549ffcd669bc67d9388895c09b97140] Context: transcript=13, files=121, lines=1248+401
+[2026-09-30T18:30:42.706Z] WARN  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] First API attempt failed: No LLM provider available. Set an Anthropic API key (ANTHROPIC_API_KEY) or configure a Jolli Space API key (jolliApiKey).. Retrying in 2000ms...
+[2026-09-30T18:30:44.111Z] INFO  [PrePushHook] [trace=5d71013838b512f77f21be6b23285036] pre-push hook: remote=origin budget=3000ms
+[2026-09-30T18:30:44.138Z] INFO  [RepoProfile] [trace=5d71013838b512f77f21be6b23285036] manual-disable read → false (by=manuallyDisabled, pid=7008, cwd=H:\liveFastClone, profile=H:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-09-30T18:30:44.667Z] INFO  [PushPendingStore] [trace=5d71013838b512f77f21be6b23285036] Enqueued 3 new push-pending entries (branch=main)
+[2026-09-30T18:30:44.675Z] INFO  [PrePushHook] [trace=5d71013838b512f77f21be6b23285036] pre-push: recorded 3 commit(s) across 1 pushed ref(s)
+[2026-09-30T18:30:44.719Z] INFO  [Summarizer] [trace=c549ffcd669bc67d9388895c09b97140] Generating summary for commit 91c9590c
+[2026-09-30T18:30:44.720Z] INFO  [Summarizer] [trace=c549ffcd669bc67d9388895c09b97140] Context: transcript=13, files=121, lines=1248+401
+[2026-09-30T18:30:44.721Z] ERROR [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] API call failed after retry: No LLM provider available. Set an Anthropic API key (ANTHROPIC_API_KEY) or configure a Jolli Space API key (jolliApiKey).
+[2026-09-30T18:30:44.722Z] WARN  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Saving summary with empty topics + llm-failed marker for commit 91c9590c
+[2026-09-30T18:30:44.723Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] API summary generated (2.0s)
+[2026-09-30T18:30:44.728Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Plan registry scan: found 0 uncommitted slug(s) on main: []
+[2026-09-30T18:30:44.734Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Plan association: detected 0 slug(s) from transcripts: []
+[2026-09-30T18:30:44.736Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-09-30T18:30:44.737Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Note association: detected 0 note(s): []
+[2026-09-30T18:30:44.740Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Reference association: detected 0 ref(s) for branch main
+[2026-09-30T18:30:44.807Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Summary built for 91c9590c: recap=no, topics=0, plans=absent, notes=absent, references=absent
+[2026-09-30T18:30:45.054Z] INFO  [PrePushHook] [trace=5d71013838b512f77f21be6b23285036] Recorded 3 commit(s) for later sync — not signed in to Jolli
+[2026-09-30T18:30:45.631Z] INFO  [StorageFactory] [trace=5d71013838b512f77f21be6b23285036] StorageFactory.create: route=cutover, projectPath=H:\liveFastClone
+[2026-09-30T18:30:45.804Z] INFO  [MetadataManager] [trace=c549ffcd669bc67d9388895c09b97140] Manifest updated: main/optmized-sonycare-91c9590c.md (commit)
+[2026-09-30T18:30:45.804Z] INFO  [FolderStorage] [trace=c549ffcd669bc67d9388895c09b97140] Markdown generated: main/optmized-sonycare-91c9590c.md
+[2026-09-30T18:30:45.820Z] INFO  [FolderStorage] [trace=c549ffcd669bc67d9388895c09b97140] Wrote 4 files, deleted 0 (Add summary for 91c9590c: optmized sonycare)
+[2026-09-30T18:30:45.821Z] INFO  [SummaryStore] [trace=c549ffcd669bc67d9388895c09b97140] Summary stored successfully for commit 91c9590c
+[2026-09-30T18:30:47.252Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Summary stored successfully for commit 91c9590c (2.4s, 0 plans, 0 notes, 0 references)
+[2026-09-30T18:30:47.254Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] === Pipeline completed in 23.1s ===
+[2026-09-30T18:30:47.254Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] === Summary content (0 topics) ===
+[2026-09-30T18:30:47.303Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] Processed 1 queue entries
+[2026-09-30T18:30:47.323Z] INFO  [PushExecutor] [trace=c549ffcd669bc67d9388895c09b97140] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-09-30T18:30:47.424Z] INFO  [PushExecutor] [trace=c549ffcd669bc67d9388895c09b97140] processPushPending(post-queue): 6 pending entr(ies) (filtered to 1 hash(es))
+[2026-09-30T18:30:47.944Z] INFO  [PushExecutor] [trace=c549ffcd669bc67d9388895c09b97140] processPushPending(post-queue): not signed in — keeping 6 entries for later
+[2026-09-30T18:30:50.933Z] INFO  [GitOps] [trace=c549ffcd669bc67d9388895c09b97140] Commit 91c9590c: optmized sonycare
+[2026-09-30T18:30:51.768Z] INFO  [StorageFactory] [trace=c549ffcd669bc67d9388895c09b97140] StorageFactory.create: route=cutover, projectPath=H:\liveFastClone
+[2026-09-30T18:30:55.153Z] INFO  [QueueWorker] [trace=c549ffcd669bc67d9388895c09b97140] === Queue worker finished ===
+[2026-09-30T18:30:55.183Z] INFO  [SessionStartHook] [trace=c549ffcd669bc67d9388895c09b97140] Briefing cache not warmed — nothing to brief on this branch
+[2026-09-30T18:30:55.318Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-09-30T18:30:55.319Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-09-30T18:30:55.319Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-09-30T18:30:55.319Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-09-30T18:30:56.932Z] INFO  [SessionSync] [trace=c549ffcd669bc67d9388895c09b97140] session sync: not uploading — no API key configured
+[2026-09-30T18:30:57.797Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f170: 0 new messages, 0 entries extracted (index 59→59)
+[2026-09-30T18:30:58.016Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f14f: 0 new messages, 0 entries extracted (index 388→388)
+[2026-09-30T18:30:58.935Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f121: 0 new messages, 0 entries extracted (index 31→31)
+[2026-09-30T18:30:58.970Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f0ed: 0 new messages, 0 entries extracted (index 12→12)
+[2026-09-30T18:30:59.005Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f0db: 0 new messages, 0 entries extracted (index 7→7)
+[2026-09-30T18:30:59.084Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f0da: 0 new messages, 0 entries extracted (index 26→26)
+[2026-09-30T18:30:59.217Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f0c9: 0 new messages, 0 entries extracted (index 44→44)
+[2026-09-30T18:30:59.349Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_f0c7: 0 new messages, 0 entries extracted (index 17→17)
+[2026-10-01T02:10:18.711Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"h:\\liveFastClone","extensionPath":"c:\\Users\\Administrator\\.vscode\\extensions\\jolli.jollimemory-vscode-0.99.18"}
+[2026-10-01T02:10:21.181Z] INFO  [initialLoad] Loading all panels
+[2026-10-01T02:10:59.729Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=11752, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-10-01T02:11:02.255Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-10-01T02:11:02.256Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-10-01T02:11:02.257Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-10-01T02:11:02.257Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-10-01T02:11:20.244Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"ced61eea","author":"b4u2toufeeq"}
+[2026-10-01T02:11:20.485Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T02:11:20.706Z] WARN  [activate] kbInitPromise watchdog fired after 60s — releasing sync gate; check initializeKB() for hangs
+[2026-10-01T02:11:25.812Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T02:11:25.813Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T02:11:29.939Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T02:11:35.347Z] INFO  [activate] Schema v5 migration already complete — skipping (no UI toggle)
+[2026-10-01T02:11:47.142Z] INFO  [MigrationEngine] 0.99.2 head-regen already completed at 2026-09-30T07:00:09.277Z — skipping phase 1
+[2026-10-01T02:11:47.145Z] INFO  [MigrationEngine] Stale-child sweep: deleted=0 failed=0
+[2026-10-01T02:11:47.150Z] INFO  [activate] KB stale-child reconcile: swept=0 completedAt=2026-09-30T07:00:09.277Z
+[2026-10-01T02:11:47.307Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T02:11:47.320Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T02:11:47.327Z] INFO  [initialLoad] All panels loaded — updating status bar
+[2026-10-01T02:11:47.328Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T02:11:47.331Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T02:11:47.983Z] INFO  [RepoProfile] [trace=d3322f0bf0afd3d74bd07088b5263890] manual-disable read → false (by=manuallyDisabled, pid=6380, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-10-01T02:11:47.985Z] INFO  [PrePushWorker] [trace=d3322f0bf0afd3d74bd07088b5263890] PrePushWorker(vscode-activation): spawned compensation drain starting
+[2026-10-01T02:11:47.993Z] INFO  [PushExecutor] [trace=d3322f0bf0afd3d74bd07088b5263890] processPushPending(activation): 6 pending entr(ies)
+[2026-10-01T02:11:48.699Z] INFO  [PushExecutor] [trace=d3322f0bf0afd3d74bd07088b5263890] processPushPending(activation): not signed in — keeping 6 entries for later
+[2026-10-01T02:11:48.700Z] INFO  [PrePushWorker] [trace=d3322f0bf0afd3d74bd07088b5263890] PrePushWorker(vscode-activation): drain done — attempted=0 pushed=0 failed=0 (not signed in)
+[2026-10-01T02:11:50.675Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T02:11:50.676Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T02:11:50.697Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T02:11:50.823Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T02:11:55.790Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T02:11:56.108Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T10:06:37.178Z] INFO  [McpProxy] [trace=f2c07ac15005b417e094f908c1e44c07] Spawned MCP daemon (pid 2596) for H:/liveFastClone
+[2026-10-01T10:06:43.138Z] INFO  [UpdateCheck] [trace=4d7a6dc78ff1cac0ac086cab768447cc] Spawned detached update-check refresh (PID: 6288)
+[2026-10-01T10:06:45.996Z] INFO  [StorageFactory] [trace=4d7a6dc78ff1cac0ac086cab768447cc] StorageFactory.create: route=cutover, projectPath=H:/liveFastClone
+[2026-10-01T10:06:49.292Z] INFO  [McpServer] [trace=4d7a6dc78ff1cac0ac086cab768447cc] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-10-01T10:06:49.300Z] INFO  [McpDaemon] [trace=4d7a6dc78ff1cac0ac086cab768447cc] MCP daemon listening on \\.\pipe\jolli-mcp-b558d8e94f74161d (cwd=H:/liveFastClone, version=0.99.18)
+[2026-10-01T10:06:49.401Z] INFO  [McpProxy] [trace=f2c07ac15005b417e094f908c1e44c07] Attached to MCP daemon 2596 (v0.99.18) for H:/liveFastClone
+[2026-10-01T10:06:49.412Z] INFO  [McpServer] [trace=4d7a6dc78ff1cac0ac086cab768447cc] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-10-01T10:06:49.695Z] INFO  [McpServer] MCP client connected: opencode/1.18.33 (unmapped — candidate for CLIENTINFO_AGENTS)
+[2026-10-01T10:07:01.559Z] INFO  [EnsureGlobalDaemon] [trace=11b11498057c26fa81be326ccd35663e] spawned global daemon ensure helper (pid 14960)
+[2026-10-01T10:08:27.887Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"h:\\liveFastClone","extensionPath":"c:\\Users\\Administrator\\.vscode\\extensions\\jolli.jollimemory-vscode-0.99.18"}
+[2026-10-01T10:08:30.498Z] INFO  [initialLoad] Loading all panels
+[2026-10-01T10:08:33.042Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=11452, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-10-01T10:08:33.189Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-10-01T10:08:33.191Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-10-01T10:08:33.191Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-10-01T10:08:33.191Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-10-01T10:09:20.584Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T10:09:21.455Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"ced61eea","author":"b4u2toufeeq"}
+[2026-10-01T10:09:23.670Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T10:09:23.671Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T10:09:24.372Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T10:09:26.933Z] INFO  [activate] Schema v5 migration already complete — skipping (no UI toggle)
+[2026-10-01T10:09:29.907Z] WARN  [activate] kbInitPromise watchdog fired after 60s — releasing sync gate; check initializeKB() for hangs
+[2026-10-01T10:09:30.024Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T10:09:30.360Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T10:09:30.368Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T10:09:31.795Z] INFO  [initialLoad] All panels loaded — updating status bar
+[2026-10-01T10:09:31.797Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T10:09:32.034Z] INFO  [MigrationEngine] 0.99.2 head-regen already completed at 2026-09-30T07:00:09.277Z — skipping phase 1
+[2026-10-01T10:09:32.038Z] INFO  [MigrationEngine] Stale-child sweep: deleted=0 failed=0
+[2026-10-01T10:09:32.043Z] INFO  [activate] KB stale-child reconcile: swept=0 completedAt=2026-09-30T07:00:09.277Z
+[2026-10-01T10:09:33.323Z] INFO  [RepoProfile] [trace=76aaf0dc3b8c9a09e2f38d8830adec56] manual-disable read → false (by=manuallyDisabled, pid=14724, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-10-01T10:09:33.325Z] INFO  [PrePushWorker] [trace=76aaf0dc3b8c9a09e2f38d8830adec56] PrePushWorker(vscode-activation): spawned compensation drain starting
+[2026-10-01T10:09:33.333Z] INFO  [PushExecutor] [trace=76aaf0dc3b8c9a09e2f38d8830adec56] processPushPending(activation): 6 pending entr(ies)
+[2026-10-01T10:09:33.747Z] INFO  [PushExecutor] [trace=76aaf0dc3b8c9a09e2f38d8830adec56] processPushPending(activation): not signed in — keeping 6 entries for later
+[2026-10-01T10:09:33.748Z] INFO  [PrePushWorker] [trace=76aaf0dc3b8c9a09e2f38d8830adec56] PrePushWorker(vscode-activation): drain done — attempted=0 pushed=0 failed=0 (not signed in)
+[2026-10-01T10:09:34.329Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T10:09:36.526Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T10:09:41.355Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-01T10:09:43.350Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T10:09:43.643Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=8, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-01T10:09:46.212Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-01T11:05:35.503Z] INFO  [McpCommand] [trace=4d7a6dc78ff1cac0ac086cab768447cc] MCP daemon exited: idle
+[2026-10-01T11:07:25.009Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"ced61eea","author":"b4u2toufeeq"}
+[2026-10-01T11:27:22.831Z] INFO  [McpProxy] [trace=f25c083ea515bf10fedd3fe69826f9d4] Spawned MCP daemon (pid 13472) for H:/liveFastClone
+[2026-10-01T11:27:26.806Z] INFO  [StorageFactory] [trace=4ee70947984f3731242ec4f3c585bd1f] StorageFactory.create: route=cutover, projectPath=H:/liveFastClone
+[2026-10-01T11:27:29.101Z] INFO  [McpServer] [trace=4ee70947984f3731242ec4f3c585bd1f] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-10-01T11:27:29.110Z] INFO  [McpDaemon] [trace=4ee70947984f3731242ec4f3c585bd1f] MCP daemon listening on \\.\pipe\jolli-mcp-b558d8e94f74161d (cwd=H:/liveFastClone, version=0.99.18)
+[2026-10-01T11:27:29.134Z] INFO  [McpProxy] [trace=f25c083ea515bf10fedd3fe69826f9d4] Attached to MCP daemon 13472 (v0.99.18) for H:/liveFastClone
+[2026-10-01T11:27:29.141Z] INFO  [McpServer] [trace=4ee70947984f3731242ec4f3c585bd1f] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-10-01T11:27:30.285Z] INFO  [McpServer] MCP client connected: opencode/1.18.34 (unmapped — candidate for CLIENTINFO_AGENTS)
+[2026-10-01T12:07:39.715Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"ced61eea","author":"b4u2toufeeq"}
+[2026-10-01T15:10:50.648Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"ced61eea","author":"b4u2toufeeq"}
+[2026-10-02T10:23:23.363Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"h:\\liveFastClone","extensionPath":"c:\\Users\\Administrator\\.vscode\\extensions\\jolli.jollimemory-vscode-0.99.18"}
+[2026-10-02T10:23:25.705Z] INFO  [initialLoad] Loading all panels
+[2026-10-02T10:23:26.020Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=11904, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-10-02T10:23:26.030Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-10-02T10:23:26.031Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-10-02T10:23:26.031Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-10-02T10:23:26.031Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-10-02T10:23:27.828Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-02T10:23:30.691Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-02T10:23:30.692Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-02T10:23:31.661Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-02T10:23:33.135Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"ced61eea","author":"b4u2toufeeq"}
+[2026-10-02T10:23:34.543Z] INFO  [activate] Schema v5 migration already complete — skipping (no UI toggle)
+[2026-10-02T10:23:37.394Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=7, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-02T10:23:37.505Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-02T10:23:38.145Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=7, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-02T10:23:38.701Z] INFO  [MigrationEngine] 0.99.2 head-regen already completed at 2026-09-30T07:00:09.277Z — skipping phase 1
+[2026-10-02T10:23:38.709Z] INFO  [MigrationEngine] Stale-child sweep: deleted=0 failed=0
+[2026-10-02T10:23:38.714Z] INFO  [activate] KB stale-child reconcile: swept=0 completedAt=2026-09-30T07:00:09.277Z
+[2026-10-02T10:23:39.738Z] INFO  [RepoProfile] [trace=02f5265140da77173a1e75ac7ff4572f] manual-disable read → false (by=manuallyDisabled, pid=6408, cwd=h:\liveFastClone, profile=h:\liveFastClone\.jolli\jollimemory\profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=2026-09-29T04:29:38.370Z)
+[2026-10-02T10:23:39.741Z] INFO  [PrePushWorker] [trace=02f5265140da77173a1e75ac7ff4572f] PrePushWorker(vscode-activation): spawned compensation drain starting
+[2026-10-02T10:23:39.749Z] INFO  [PushExecutor] [trace=02f5265140da77173a1e75ac7ff4572f] processPushPending(activation): 6 pending entr(ies)
+[2026-10-02T10:23:41.225Z] INFO  [PushExecutor] [trace=02f5265140da77173a1e75ac7ff4572f] processPushPending(activation): not signed in — keeping 6 entries for later
+[2026-10-02T10:23:41.226Z] INFO  [PrePushWorker] [trace=02f5265140da77173a1e75ac7ff4572f] PrePushWorker(vscode-activation): drain done — attempted=0 pushed=0 failed=0 (not signed in)
+[2026-10-02T10:23:41.375Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=7, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-02T10:23:44.390Z] INFO  [initialLoad] All panels loaded — updating status bar
+[2026-10-02T10:23:44.390Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-02T10:23:49.363Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=7, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-02T10:24:08.663Z] INFO  [Installer] Checking Jolli Memory status
+[2026-10-02T10:24:09.620Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
+[2026-10-02T10:24:17.049Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=true, hermesHook=false, worktreeHooks=true, sessions=7, summaries=4, codex=true/true, gemini=true/true, enabledWorktrees=1, opencode=true/true, cursor=true/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-10-02T10:24:17.402Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=h:\liveFastClone
