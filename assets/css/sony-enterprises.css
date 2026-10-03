@@ -8,14 +8,21 @@
   --dark: #202020;
   --muted: #636363;
   --wa: #25d366;
+  /* Height of the sticky .site-header (navbar + sub-navbar). Anchor targets are
+     offset by this much so they never land underneath it. Must live on the
+     scrolling element (html), not body — scroll-padding does not propagate
+     from body to the viewport. */
+  --sticky-offset: 180px;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--sticky-offset);
+}
 
 body {
   font-family: "Poppins", sans-serif;
   color: var(--dark);
-  scroll-padding-top: 180px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -422,7 +429,7 @@ a { color: var(--brand); }
 
 /* Responsive ------------------------------------------------------------- */
 @media (max-width: 767.98px) {
-  body { scroll-padding-top: 120px; }
+  :root { --sticky-offset: 120px; }
   .hero-section { padding: 2.5rem 0; }
   .hero-section h1 { font-size: 2rem; }
   .section-heading h2 { font-size: 1.6rem; }

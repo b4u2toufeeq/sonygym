@@ -36,20 +36,70 @@
     });
   }
 
+  /* ------------------------------------------------- In-page navigation */
+  /* The header navs are Bootstrap collapses. While one animates open/closed it
+     changes the page height, so a native fragment scroll resolves its target
+     against the old layout and lands in the wrong place. Close every open
+     collapse first, then navigate once the last one has finished. */
+  var NAV_COLLAPSES = ['siteNav', 'subNavMenu'];
+
+  function openNavCollapses() {
+    return NAV_COLLAPSES
+      .map(function (id) { return document.getElementById(id); })
+      .filter(function (el) {
+        return el && (el.classList.contains('show') || el.classList.contains('collapsing'));
+      });
+  }
+
+  function fragmentOf(link) {
+    var href = link.getAttribute('href') || '';
+    if (href.charAt(0) !== '#' || href.length < 2) return null;
+    var target = document.getElementById(href.slice(1));
+    return target ? { hash: href, target: target } : null;
+  }
+
+  function scrollToFragment(hash, target) {
+    if (window.history && history.replaceState) history.replaceState(null, '', hash);
+    // No explicit `behavior` — it falls back to the computed scroll-behavior on
+    // <html>, so the reduced-motion override in the stylesheet still applies.
+    // scroll-padding-top on <html> keeps the target clear of the sticky header.
+    if (typeof target.scrollIntoView === 'function') target.scrollIntoView({ block: 'start' });
+    else location.hash = hash;
+  }
+
+  function followNavLink(link) {
+    var frag = fragmentOf(link);
+    if (!frag || !window.bootstrap) return;
+
+    var pending = openNavCollapses();
+    if (!pending.length) return;
+    // Bail out to native navigation if any open panel has no Collapse instance,
+    // otherwise `hidden.bs.collapse` would never arrive and the scroll would hang.
+    if (!pending.every(function (el) { return !!window.bootstrap.Collapse.getInstance(el); })) return;
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var remaining = pending.length;
+      var done = function () {
+        remaining -= 1;
+        if (remaining > 0) return;
+        pending.forEach(function (el) { el.removeEventListener('hidden.bs.collapse', done); });
+        scrollToFragment(frag.hash, frag.target);
+      };
+      pending.forEach(function (el) {
+        el.addEventListener('hidden.bs.collapse', done);
+        window.bootstrap.Collapse.getInstance(el).hide();
+      });
+    });
+  }
+
   /* --------------------------------------------------------- Sub nav */
   var subNav = document.getElementById('subNavMenu');
-  if (subNav && window.bootstrap) {
+  if (subNav) {
     subNav.addEventListener('shown.bs.collapse', function () {
       subNav.scrollTop = 0;
     });
-    subNav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        if (window.innerWidth < 992) {
-          var inst = window.bootstrap.Collapse.getInstance(subNav);
-          if (inst) inst.hide();
-        }
-      });
-    });
+    subNav.querySelectorAll('a').forEach(followNavLink);
   }
 
   /* --------------------------------------------------------- Lead forms */
@@ -228,11 +278,22 @@
   /* ------------------------------------------------------- Mobile nav */
   var navCollapseEl = document.getElementById('siteNav');
   if (navCollapseEl && window.bootstrap) {
-    var bsCollapse = new bootstrap.Collapse(navCollapseEl, { toggle: false });
-    document.querySelectorAll('#siteNav a, #siteNav button, .sub-nav-links a').forEach(function (link) {
-      link.addEventListener('click', function () {
+    var bsCollapse = new window.bootstrap.Collapse(navCollapseEl, { toggle: false });
+    document.querySelectorAll('#siteNav button').forEach(function (el) {
+      el.addEventListener('click', function () {
         if (navCollapseEl.classList.contains('show')) bsCollapse.hide();
       });
+    });
+    document.querySelectorAll('#siteNav a').forEach(function (link) {
+      // Fragment links close the panel and then scroll (see followNavLink);
+      // anything else just closes it before the browser leaves the page.
+      if (fragmentOf(link)) {
+        followNavLink(link);
+      } else {
+        link.addEventListener('click', function () {
+          if (navCollapseEl.classList.contains('show')) bsCollapse.hide();
+        });
+      }
     });
   }
 
