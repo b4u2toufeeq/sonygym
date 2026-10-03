@@ -1,0 +1,19 @@
+{
+  "name": "Sony Motors — Electric 2-Wheeler Scooters, Adilabad",
+  "short_name": "Sony Motors",
+  "description": "Eleven non-RTO and RTO electric scooters with 70-120 km range in Adilabad, Telangana.",
+  "start_url": "/sonymoters/",
+  "scope": "/sonymoters/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f6b00",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "48x48 32x32 16x16", "type": "image/x-icon" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/img/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Order on WhatsApp", "url": "https://wa.me/919390989002" }
+  ]
+}

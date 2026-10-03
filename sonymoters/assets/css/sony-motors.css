@@ -64,6 +64,7 @@ img { max-width: 100%; }
 .btn-brand:hover { color: #fff; filter: brightness(1.05); }
 .btn-outline-brand { border: 2px solid var(--brand); color: var(--brand-deep); font-weight: 700; }
 .btn-outline-brand:hover { background: var(--brand); color: #fff; }
+.home-link { margin-left: .75rem; white-space: nowrap; }
 
 /* Topbar ----------------------------------------------------------------- */
 .topbar { background: var(--dark); font-size: .85rem; }
@@ -123,6 +124,7 @@ img { max-width: 100%; }
 @media (max-width: 991.98px) {
   .main-nav-center { align-items: flex-start; margin: 1rem 0 .5rem; }
   .main-nav-links { justify-content: flex-start; gap: .55rem 1rem; }
+  .home-link { margin: .6rem .5rem 0 0; }
   .sub-navbar .container { max-width: 100%; }
   .sub-nav-toggle { display: flex; }
   .sub-nav-collapse {
@@ -147,6 +149,7 @@ img { max-width: 100%; }
 /* Hero banner carousel --------------------------------------------------- */
 .promo-carousel { background: linear-gradient(90deg, var(--brand-deep), var(--brand)); }
 .promo-carousel .carousel-inner { overflow: hidden; }
+.promo-carousel .carousel-item picture { display: block; }
 .promo-carousel-frame { max-width: 1280px; margin: 0 auto; padding: 1.1rem 0; }
 .promo-carousel .carousel-item img {
   display: block; width: 100%; height: auto; border-radius: 14px;
@@ -171,6 +174,16 @@ img { max-width: 100%; }
 }
 .promo-carousel .carousel-control-prev:hover .carousel-control-prev-icon,
 .promo-carousel .carousel-control-next:hover .carousel-control-next-icon { background-color: rgba(0, 0, 0, .5); }
+/* One slide per device, so the indicator bar needs to shrink to stay on one row. */
+@media (max-width: 575.98px) {
+  .promo-carousel-frame { padding: .7rem 0; }
+  .promo-carousel .carousel-indicators [data-bs-target] { width: 15px; margin: 0 .12rem; }
+  .promo-carousel .carousel-indicators .active { width: 26px; }
+  .promo-carousel .carousel-control-prev,
+  .promo-carousel .carousel-control-next { width: 9%; }
+  .promo-carousel .carousel-control-prev-icon,
+  .promo-carousel .carousel-control-next-icon { width: 36px; height: 36px; }
+}
 
 /* Hero ------------------------------------------------------------------- */
 .hero-section { background: linear-gradient(180deg, var(--brand-soft) 0%, #ffffff 60%); padding: 4rem 0; }
